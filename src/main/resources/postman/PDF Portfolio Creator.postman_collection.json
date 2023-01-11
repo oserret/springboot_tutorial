@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "1b633946-9367-44d5-8a1c-e97ebfd4a2b1",
+		"name": "PDF Portfolio Creator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/oserret.EXPERTAI/Downloads/expert.ai Global Projects Portfolio - 2021.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/documents/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"documents",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Parse Document",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/documents/parseDocument/expert.ai Global Projects Portfolio - 2021 (1).xlsx?week=28",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"documents",
+						"parseDocument",
+						"expert.ai Global Projects Portfolio - 2021 (1).xlsx"
+					],
+					"query": [
+						{
+							"key": "week",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Email sending",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/documents/sendEmail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"documents",
+						"sendEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Do Everything Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/oserret.EXPERTAI/Downloads/expert.ai Global Projects Portfolio - 2022.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/documents/doAll?week=3&format=docx&year=2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"documents",
+						"doAll"
+					],
+					"query": [
+						{
+							"key": "week",
+							"value": "3"
+						},
+						{
+							"key": "format",
+							"value": "docx"
+						},
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

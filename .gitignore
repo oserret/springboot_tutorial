@@ -1,0 +1,43 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+/upload-dir/expert.ai Global Projects Portfolio - 2021.xlsx
+/output-dir/expert.ai_FR_project_portfolio_week_27.pdf
+/output-dir/expert.ai_IB_project_portfolio_week_27.pdf
+/output-dir/expert.ai_IT_project_portfolio_week_27.pdf
+/output-dir/expert.ai_UK_project_portfolio_week_27.pdf
+/output-dir/expert.ai_US_project_portfolio_week_27.pdf
+/logs/portfolio-pdf-generator.log
+/portfolio.zip
+/logs/archived/
+/outputportfolio.zip
